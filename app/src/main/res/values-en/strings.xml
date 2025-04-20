@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Let\'s Paint</string>
+    <string name="brush">Brush</string>
+    <string name="pencil">Pencil</string>
+    <string name="fork">Fork</string>
+    <string name="eraser">Eraser</string>
+    <string name="color_picker">Pick Color</string>
+    <string name="background_picker">Change Background</string>
+    <string name="size_picker">Stroke Size</string>
+    <string name="clear">Clear</string>
+    <string name="save">Save</string>
+</resources>

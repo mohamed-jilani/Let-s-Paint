@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">لنرسم</string>
+    <string name="brush">فرشاة</string>
+    <string name="pencil">قلم رصاص</string>
+    <string name="fork">شوكة</string>
+    <string name="eraser">ممحاة</string>
+    <string name="color_picker">اختر اللون</string>
+    <string name="background_picker">تغيير الخلفية</string>
+    <string name="size_picker">حجم الخط</string>
+    <string name="clear">مسح</string>
+    <string name="save">حفظ</string>
+</resources>

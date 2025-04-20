@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".DrawingFragment">
+
+        <!-- 🎨 Barre d'outils horizontale en haut -->
+        <LinearLayout
+            android:id="@+id/brushToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:background="@drawable/toolbar_background"
+            android:padding="8dp"
+            android:elevation="8dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/brushToolBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/pinceau1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/brush"
+                android:scaleType="centerInside" />
+
+            <ImageButton
+                android:id="@+id/pencilToolBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/pinceau2"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/pencil"
+                android:scaleType="centerInside" />
+
+            <ImageButton
+                android:id="@+id/forkToolBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/fork"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/fork"
+                android:scaleType="centerInside" />
+
+            <ImageButton
+                android:id="@+id/eraserToolBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/gomme"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/eraser"
+                android:scaleType="centerInside" />
+
+        </LinearLayout>
+
+        <!-- Zone de dessin -->
+        <FrameLayout
+            android:id="@+id/drawingContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/brushToolbar"
+            android:layout_above="@id/bottomToolbar">
+
+            <com.jilani.letspaint.CustomView.PaintView
+                android:id="@+id/paintView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" />
+        </FrameLayout>
+
+        <!-- Barre inférieure -->
+        <LinearLayout
+            android:id="@+id/bottomToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/toolbar_background"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/colorPickerBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/art"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/color_picker"
+                android:scaleType="centerInside" />
+
+            <View
+                android:id="@+id/currentColorView"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/black" />
+
+            <ImageButton
+                android:id="@+id/backgroundColorBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/chevalet"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/background_picker"
+                android:scaleType="centerInside" />
+
+            <ImageButton
+                android:id="@+id/sizePickerBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/size"
+                android:layout_marginStart="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/size_picker"
+                android:scaleType="centerInside" />
+
+            <ImageButton
+                android:id="@+id/clearBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/carnetdecroquis"
+                android:layout_marginStart="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/clear"
+                android:scaleType="centerInside" />
+
+            <ImageButton
+                android:id="@+id/saveBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/sauvegarder"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/save"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

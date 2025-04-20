@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_color"
+        android:title="Couleur"
+        android:icon="@drawable/aquarelles"
+        app:showAsAction="always" />
+    <item android:id="@+id/action_size"
+        android:title="Taille"
+        android:icon="@drawable/chevalet"
+        app:showAsAction="always" />
+    <item android:id="@+id/action_clear"
+        android:title="Effacer"
+        android:icon="@drawable/clean"
+        app:showAsAction="always" />
+</menu>
+
+

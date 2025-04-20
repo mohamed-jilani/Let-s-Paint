@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Let\'s Paint</string>
+    <string name="brush">Pinceau</string>
+    <string name="pencil">Crayon</string>
+    <string name="fork">Fourchette</string>
+    <string name="eraser">Gomme</string>
+    <string name="color_picker">Choisir Couleur</string>
+    <string name="background_picker">Changer fond</string>
+    <string name="size_picker">Taille du trait</string>
+    <string name="clear">Effacer</string>
+    <string name="save">Sauvegarder</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_brush"
+        android:title="Pinceau"
+        android:icon="@drawable/brosse"
+        app:showAsAction="always" />
+    <item android:id="@+id/action_pencil"
+        android:title="Crayon"
+        android:icon="@drawable/brossefine"
+        app:showAsAction="always" />
+    <item android:id="@+id/action_fork"
+        android:title="Fourchette"
+        android:icon="@drawable/aerosol"
+        app:showAsAction="always" />
+</menu>
